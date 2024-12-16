@@ -12,7 +12,7 @@
                     {{ __("You're logged in!") }}
                 </div>
             </div>
-            You are now in bb.b2.
+            You are now in dd.d1.
         </div>
     </div>
 </x-app-layout>
