@@ -53,10 +53,6 @@ Route::get('/cc/c2', function () {
 
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
 Route::get('/ff/f1',function(){
     return view('ff.f1');
 });
@@ -64,6 +60,14 @@ Route::get('/ff/f1',function(){
 Route::get('/ff/f2',function(){
     return view('ff.f2');
 });
+
+Route::get('/hh/h1',function(){
+    return view('hh.h1');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
