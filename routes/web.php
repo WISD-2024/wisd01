@@ -77,6 +77,10 @@ Route::get('/gg/g1',function(){
     return view('gg.g1');
 });
 
+Route::get('/gg/g2',function(){
+    return view('gg.g2');
+});
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
